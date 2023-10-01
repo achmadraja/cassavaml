@@ -1,25 +1,6 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import datetime
-
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-import tensorflow as tf
-from tensorflow.keras import models, layers
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
-from tensorflow.keras.applications import ResNet50, DenseNet121, EfficientNetB0
-from keras.optimizers import Adam
-
-# ignoring warnings
-import warnings
-warnings.simplefilter("ignore")
-
-import os, cv2, json
-from PIL import Image
+import numpy as np
 
 st.title('Uber pickups in NYC')
 
